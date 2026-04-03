@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar">
+        <div class="sidebar-inner">
+            <h1 class="site-title"><a href="/">{{ site.title }}</a></h1>
+            <p class="site-subtitle">Java期末项目记录</p>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="/" class="{% if page.url == '/' %}active{% endif %}">首页</a></li>
+                    <li><a href="/2026/04/03/project-overview.html" class="{% if page.url contains 'project-overview' %}active{% endif %}">项目概述</a></li>
+                    <li><a href="/2026/04/03/tech-stack.html" class="{% if page.url contains 'tech-stack' %}active{% endif %}">技术栈</a></li>
+                    <li><a href="/2026/04/03/architecture.html" class="{% if page.url contains 'architecture' %}active{% endif %}">架构设计</a></li>
+                    <li><a href="/2026/04/03/design-patterns.html" class="{% if page.url contains 'design-patterns' %}active{% endif %}">设计模式</a></li>
+                    <li><a href="/2026/04/03/card-design.html" class="{% if page.url contains 'card-design' %}active{% endif %}">卡牌设计</a></li>
+                    <li><a href="/2026/04/03/development-plan.html" class="{% if page.url contains 'development-plan' %}active{% endif %}">开发计划</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <p>Github: <a href="https://github.com/{{ site.github_username }}">@{{ site.github_username }}</a></p>
+            </div>
+        </div>
+    </aside>
+    <main class="content">
+        {{ content }}
+    </main>
+</div>
+</body>
+</html>

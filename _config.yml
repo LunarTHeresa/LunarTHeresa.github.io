@@ -1,0 +1,24 @@
+title: 卡牌RPG战棋游戏开发手记
+author: 课程项目组
+email: lunartheresa@example.com
+description: >
+  Java面向对象程序设计期末项目记录 —— 一个TCG卡牌对战游戏的完整开发过程。
+
+baseurl: ""
+url: "https://LunarTHeresa.github.io"
+github_username: LunarTHeresa
+
+markdown: kramdown
+theme: minimal
+
+collections:
+  posts:
+    title: Posts
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: post
+      author: 课程项目组
